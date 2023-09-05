@@ -1,18 +1,60 @@
 .header {
-    height: 80px;
     background-color: black;
-    display: flex;
-    width: 100%;
-    align-content: space-between;
-    border: solid white;
-
-    .menu-list {
+    .header-inner {
+       
+        max-width: 1170px;
+        margin: 0 auto;
+        height: 80px;     
         display: flex;
-        img{
-            background-color: white;
-            width: 40px;
-            border-radius: 50%;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            color: white;    
+            display: flex;
+            align-items: center; 
+            .logo-item-big {
+                position: relative;
+                float: left; 
+                .logo-item-small {
+                    position: absolute;
+                    top: 14px;
+                    right: 12px;
+                    z-index: 2;
+                }   
+            }
+            h4 {
+                margin-left: 10px;
+               
+            }
+       }
+        .menu {
+            width: 400px;
+            .menu-list {
+                display: flex; 
+                justify-content: space-between; 
+                img{
+                    background-color: #EF6D58;
+                    width: 20px;
+                    border-radius: 50%;
+                    float: left;
+                    margin-top: -2px;
+                }
+                a {                   
+                color: white; 
+                margin-left: 3px;   
+                }
+            }
         }
-    }
-  
+      button {
+        width: 140px;
+        height: 45px;
+        border-radius: 8px;
+        background-color: transparent;
+        color:white;
+        border: solid #7e7d7d;
+      
+      }
+    }   
 }

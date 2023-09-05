@@ -1,0 +1,26 @@
+.footer {
+    background-color:inherit;
+    display: flex;
+    .main-footer {
+         max-width: 1170px;
+        width: 100%;
+        height: 440px;
+        margin: 0 auto;
+        
+        border: solid black;
+       .list-footer {
+       
+        display: flex;
+        justify-content: space-between;
+       }
+        .list-footer-service, .list-footer-menu {
+            li:first-child {
+                color: #EF6D58;
+            }
+            
+         
+        }
+    }
+    
+    
+}
