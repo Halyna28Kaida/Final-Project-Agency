@@ -4,80 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.min.css" />
-    <title>Document</title>
+    <title>Agency</title>
   </head>
   <body>
     <div id="root">
       <header class="header">
-        <section class="header-inner">
-          <div class="logo">
-            <div class="logo-item-big">
-              <img src="./assets/icons/Polygon.svg" alt="" />
-              <div class="logo-item-small">
-                <img src="./assets/icons/Polygon-1.svg" alt="" />
+        <nav class="header-inner">
+          <a class="active" href="./index.html">
+            <div class="logo">
+              <div class="logo-item-big">
+                <img src="./assets/icons/Polygon.svg" alt="" />
+                <div class="logo-item-small">
+                  <img src="./assets/icons/Polygon-1.svg" alt="" />
+                </div>
               </div>
+              <h4 class="header-logo">Agency</h4>
             </div>
-
-            <h4>Agency</h4>
-          </div>
-          <nav class="menu">
+          </a>
+          <section class="menu">
             <ul class="menu-list">
               <li>
-                <a href="#">
+                <a href="./about.html">
                   <img src="./assets/icons/about-svgrepo-com.svg" alt="" />
                 </a>
-                <a href="#">About</a>
+                <a href="./about.html">About</a>
               </li>
               <li>
-                <a href="#">
+                <a href="./service.html">
                   <img src="./assets/icons/services-svgrepo-com.svg" alt="" />
                 </a>
-                <a href="#">Services</a>
+                <a href="./service.html">Services</a>
               </li>
               <li>
-                <a href="#">
+                <a href="./pricing.html">
                   <img src="./assets/icons/price-tag-svgrepo-com.svg" alt="" />
                 </a>
-                <a href="#">Pricing</a>
+                <a href="./pricing.html">Pricing</a>
               </li>
               <li>
-                <a href="#"
+                <a href="./blog.html"
                   ><img src="./assets/icons/blog-svgrepo-com.svg" alt=""
                 /></a>
-                <a href="#">Blog</a>
+                <a href="./blog.html">Blog</a>
               </li>
             </ul>
-          </nav>
+          </section>
           <button>CONTACT</button>
-        </section>
+        </nav>
       </header>
       <main></main>
       <footer class="footer">
         <section class="main-footer">
-          <ul class="list-footer">
-            <li class="footer-agency"><h4>Agency</h4></li>
-            <li>
-              <ul class="list-footer-menu">
-                <li>MENU</li>
+          <div class="footer-agency">
+            <a class="active" href="./index.html">
+              <h4>Agency</h4>
+            </a>
+          </div>
+          <div class="list-footer-menu">
+            <ul>
+              <li class="title">MENU</li>
+              <a href="./about.html">
                 <li>About</li>
+              </a>
+              <a href="./service.html">
                 <li>Services</li>
+              </a>
+              <a href="./blog.html">
                 <li>Blog</li>
+              </a>
+              <a href="#">
                 <li>Contact</li>
-              </ul>
-            </li>
-            <li>
-              <ul class="list-footer-service">
-                <li>SERVICE</li>
+              </a>
+            </ul>
+          </div>
+          <div class="list-footer-service">
+            <ul>
+              <li class="title">SERVICE</li>
+              <a href="#">
                 <li>Design</li>
+              </a>
+              <a href="#">
                 <li>Development</li>
+              </a>
+              <a href="#">
                 <li>Marketing</li>
+              </a>
+              <a href="#">
                 <li>See More</li>
-              </ul>
-            </li>
-            <li>
-              <img src="./assets/icons/footer/social.svg" alt="" />
-            </li>
-          </ul>
+              </a>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <img src="./assets/icons/footer/social.svg" alt="" />
+          </div>
+        </section>
+        <section class="footer-bottom">
+          <div class="footer-botom-left">
+            <p>Copyright &copy; 2022 Laaqiq. All Rights Reserved.</p>
+          </div>
+          <div class="footer-botom-right">
+            <p>Terms of Use</p>
+            <p>Privacy Policy</p>
+          </div>
         </section>
       </footer>
     </div>
