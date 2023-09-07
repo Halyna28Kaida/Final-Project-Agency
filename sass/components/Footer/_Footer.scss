@@ -11,8 +11,8 @@
         justify-content: space-between;
        .footer-agency {
         .active {
-            h4 {
-                color: #d29dd1;
+            h4{
+                color: var(--color-active);
             }
         }
            
@@ -27,6 +27,11 @@
         .list-footer-service, .list-footer-menu {
             li {
                 margin: 20px;
+            }
+            .active {
+                li {
+                    color: var(--color-active);
+                }
             }
         }
     }

@@ -1,5 +1,5 @@
 .header {
-    background-color: black;
+    background-color: rgb(31, 20, 35);
     .header-inner {   
         max-width: 1170px;
         margin: 0 auto;
@@ -10,11 +10,10 @@
         align-items: center;
         padding: 0 10px;
         .active {
-            h4 {
-                color: #d29dd1;
+            .logo {
+                color: var(--color-active);
             }
         }
-
         .logo {
             color: white;    
             display: flex;
@@ -53,27 +52,90 @@
                 color: white; 
                 margin-left: 3px;   
                 }
+                .active {
+                     a {
+                        color: var(--color-active);
+                     }
+                         
+                 }
                 li :hover {
                     text-decoration: underline;
                 }
             }
         }
+        
       button {
         width: 140px;
         height: 45px;
         border-radius: 8px;
-        background-color: transparent;
+        background-color: var(--bg-color-button);
         color:white;
-        border: solid #7e7d7d;
+        border: var(--border-button);
         margin-right: 20px; 
         transition: 0.5s;
       }
       button:hover {
         background-color: #EF6D58;
         color: black;
+        cursor: pointer;
       }
-    }   
+    }
+    .modern-studio {
+        max-width: 1170px;
+        height: 615px;
+        margin: 80px auto 0;
+        position: relative;
+        .modern-studio-left {
+         max-width: 580px;
+         height: 602px;
+        //  border: solid white; 
+         color: white;
+         position: absolute;
+         z-index: 1;
+
+            .ms-p-orange {
+                color:#EF6D58;
+            }
+            .ms-p-grey {
+                color: #7e7d7d;
+            }
+            .ms-left-buttons {
+                width: 300px;
+                margin-top: 35px;
+                display: flex;
+                justify-content: space-between;
+
+                button {
+                    background-color: var(--bg-color-button);
+                    width: 135px;
+                    height: 48px;
+                    border: var(--border-button);
+                    color: white;
+                    border-radius: 8px;
+                    transition: 0.5s;
+                }
+                button:hover {
+                    background-color: #EF6D58;
+                    color: black;
+                    cursor: pointer;
+                  }
+
+
+            }
+            
+        }
+        .ms-left-star {
+            position: absolute;
+            top: 40px;
+            left: 280px;
+           
+        
+         
+        }  
+     }   
 }
+
+
 @media screen and (max-width:800px) {
     .header {
         .header-inner {
@@ -90,5 +152,6 @@
             }
         }
     }
+    
     
 }
