@@ -6,10 +6,11 @@ a {
     text-decoration: none;
     color: black;
 }
-body {
+html, body {
     background-color:#f2dfd1;
-    // min-width: 375px;
+    max-width: 1600px;
     font-size: 16px;
+
 }
 li {
     list-style: none;
