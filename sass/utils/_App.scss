@@ -16,9 +16,40 @@ li {
     list-style: none;
 }
 h4 {
-    font-size: 24px;
+    font-size: var(--fs-h4);
 }
+h5 {
+    font-size: var(--fs-h5);
+}
+
 h1 {
-    font-size: 72px;
+    font-size: var(--fs-h1);
 }
+h2 {
+    font-size: var(--fs-h2);
+    font-weight: 700;
+}
+h3 {
+    font-size: var(--fs-h3);
+    font-weight: 700;
+}
+.text-big {
+    font-size: var(--fs-text-big);
+}
+.text-small {
+    font-size: var(--fs-text-small);
+}
+button {
+    width: 140px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: var(--bg-color-button);
+    color:white;
+    transition: 0.5s;
+  }
+  button:hover {
+    background-color: #EF6D58;
+    color: black;
+    cursor: pointer;
+  }
 
