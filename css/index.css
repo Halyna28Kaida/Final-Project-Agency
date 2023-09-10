@@ -97,9 +97,9 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -146,7 +146,7 @@ button:hover {
           justify-content: space-between;
 }
 .header .header-inner .menu .menu-list img {
-  background-color: #EF6D58;
+  background-color: #ef6d58;
   width: 20px;
   border-radius: 50%;
   float: left;
@@ -167,17 +167,18 @@ button:hover {
   margin-right: 20px;
 }
 .header .modern-studio {
-  max-width: 1170px;
   margin: 80px auto 0;
-  display: grid;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  grid-template-areas: "modern-studio-left modern-studio-right";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .header .modern-studio .modern-studio-left {
   position: relative;
-  width: 500px;
+  width: 450px;
   height: 670px;
 }
 .header .modern-studio .modern-studio-left .modern-studio-left-position {
@@ -188,7 +189,7 @@ button:hover {
   z-index: 1;
 }
 .header .modern-studio .modern-studio-left .modern-studio-left-position .ms-p-orange {
-  color: #EF6D58;
+  color: #ef6d58;
 }
 .header .modern-studio .modern-studio-left .modern-studio-left-position .ms-p-grey {
   color: #7e7d7d;
@@ -230,7 +231,9 @@ button:hover {
   max-width: 600px;
   height: 500px;
   text-align: center;
-  justify-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: absolute;
   top: 50px;
   left: 30px;
@@ -242,22 +245,39 @@ button:hover {
           animation-duration: 1s;
   -webkit-animation-name: slidebigoval;
           animation-name: slidebigoval;
-  max-width: 100%;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-oval .big-oval img {
   max-width: 90%;
+}
+@-webkit-keyframes slidebigoval {
+  from {
+    margin-left: -200%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes slidebigoval {
+  from {
+    margin-left: -200%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid {
   display: grid;
   max-width: 570px;
   position: absolute;
   z-index: 2;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid .arch-laptop {
   grid-column: 1/3;
   grid-row: 1/4;
+  width: auto;
+  height: auto;
   position: relative;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid .arch-laptop .arch {
@@ -266,22 +286,21 @@ button:hover {
   -webkit-animation-name: slidearch;
           animation-name: slidearch;
   position: absolute;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 200px;
+  height: 100%;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid .arch-laptop .laptop {
   position: absolute;
-  margin-top: 15px;
-  margin-left: 10px;
+  margin-top: 50px;
+  margin-left: 20px;
   z-index: 3;
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 200px;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid .oval {
   grid-column: 3/4;
   grid-row: 1/3;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: auto;
+  height: auto;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid .stars {
   grid-column: 3/4;
@@ -290,14 +309,14 @@ button:hover {
   margin-left: 35px;
   margin-top: 30px;
   z-index: 3;
-  max-width: 100%;
-  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid .cloud {
   grid-column: 4/5;
   grid-row: 1/3;
-  max-width: 100%;
-  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid .smiling-girl {
   grid-column: 3/5;
@@ -306,8 +325,7 @@ button:hover {
           animation-duration: 4s;
   -webkit-animation-name: slidesmile;
           animation-name: slidesmile;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 200px;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid .spiral {
   grid-column: 1/2;
@@ -316,8 +334,8 @@ button:hover {
           animation-duration: 2s;
   -webkit-animation-name: slidespiral;
           animation-name: slidespiral;
-  max-width: 100%;
-  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid .id-card {
   grid-column: 1/3;
@@ -326,8 +344,8 @@ button:hover {
           animation-duration: 2s;
   -webkit-animation-name: slidecard;
           animation-name: slidecard;
-  max-width: 100%;
-  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid .arrow {
   grid-column: 3/4;
@@ -336,28 +354,127 @@ button:hover {
           animation-duration: 4s;
   -webkit-animation-name: slidearrow;
           animation-name: slidearrow;
-  max-width: 100%;
-  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+@-webkit-keyframes slidearch {
+  from {
+    margin-left: 200%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes slidearch {
+  from {
+    margin-left: 200%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@-webkit-keyframes slidecard {
+  from {
+    margin-left: 200%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes slidecard {
+  from {
+    margin-left: 200%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@-webkit-keyframes slidearrow {
+  from {
+    margin-left: 200%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes slidearrow {
+  from {
+    margin-left: 200%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@-webkit-keyframes slidespiral {
+  from {
+    margin-left: 200%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes slidespiral {
+  from {
+    margin-left: 200%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@-webkit-keyframes slidesmile {
+  from {
+    margin-left: 200%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes slidesmile {
+  from {
+    margin-left: 200%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 
+.arch,
+.laptop,
+.oval,
+.stars,
+.cloud,
+.smiling-girl,
+.spiral,
+.arrow,
+.id-card {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+@media screen and (max-width: 1100px) {
+  .modern-studio-left {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .modern-studio-right {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
 @media screen and (max-width: 800px) {
   .header .header-inner .menu .menu-list li a:last-child {
     display: none;
   }
 }
 @media screen and (max-width: 500px) {
-  .header .modern-studio {
-    grid-template-areas: "modern-studio-right" "modern-studio-left";
-  }
-  .header .modern-studio .modern-studio-right {
-    grid-area: modern-studio-right;
-  }
-  .header .modern-studio .modern-studio-left {
-    grid-area: modern-studio-left;
-  }
   .header .modern-studio .modern-studio-left .ms-left-star {
     top: 10px;
     left: 180px;
+  }
+  .header .modern-studio .modern-studio-left .modern-studio-right-grid img {
+    width: 70%;
   }
   .header .modern-studio h1 {
     font-size: 52px;
@@ -367,6 +484,16 @@ button:hover {
 .main {
   max-width: 1170px;
   margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .main .addition {
   padding: 50px 0;
@@ -390,17 +517,19 @@ button:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
 }
 .main .about .about-up ul .about-up-left {
   max-width: 570px;
   min-width: 375px;
-  border: solid black;
 }
 .main .about .about-up ul .about-up-left img {
-  max-width: 100%;
+  max-width: 375px;
 }
 .main .about .about-up ul .about-up-right {
   max-width: 450px;
@@ -447,9 +576,8 @@ button:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .main .how-we-work .how-we-work-left {
   max-width: 470px;
@@ -487,11 +615,13 @@ button:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .main .video-reel .video-reel-left {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 570px;
 }
 .main .video-reel .video-reel-right {
@@ -508,14 +638,17 @@ button:hover {
   margin-top: 175px;
 }
 .main .features .features-top ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .main .features .features-top ul .features-top-left {
   max-width: 470px;
@@ -543,8 +676,8 @@ button:hover {
   content: url(/assets/icons/Featers/check.svg);
   float: left;
 }
-.main .features .features-top ul .features-top-right {
-  max-width: 530px;
+.main .features .features-top ul .features-top-right img {
+  max-width: 350px;
 }
 .main .features .features-bottom {
   margin-top: 190px;
@@ -555,9 +688,8 @@ button:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .main .features .features-bottom ul .features-bottom-left {
   max-width: 370px;
@@ -596,7 +728,8 @@ button:hover {
 .main .features .features-bottom ul .features-bottom-right .features-card-right h4 {
   margin: 125px 0 30px;
 }
-.main .features .features-bottom ul .features-bottom-right .features-card-left:hover, .main .features .features-bottom ul .features-bottom-right .features-card-right:hover {
+.main .features .features-bottom ul .features-bottom-right .features-card-left:hover,
+.main .features .features-bottom ul .features-bottom-right .features-card-right:hover {
   -webkit-transform: scale(1.05, 1.05);
           transform: scale(1.05, 1.05);
   background-color: white;
@@ -619,13 +752,15 @@ button:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .main .service .service-top ul .service-top-left {
   max-width: 580px;
   padding-bottom: 100px;
+}
+.main .service .service-top ul .service-top-left img {
+  max-width: 350px;
 }
 .main .service .service-top ul .service-top-right {
   max-width: 465px;
@@ -727,14 +862,13 @@ button:hover {
   margin: auto;
   position: relative;
   border-radius: 20px;
+  max-width: 670px;
 }
 .portfolio .latest-work ul li .picture {
   -webkit-transition: -webkit-transform 1s ease;
   transition: -webkit-transform 1s ease;
   transition: transform 1s ease;
   transition: transform 1s ease, -webkit-transform 1s ease;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .portfolio .latest-work ul li .text {
   position: absolute;
@@ -750,7 +884,7 @@ button:hover {
 .portfolio .get-started-wrap {
   background-color: #f2dfd1;
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 50px 0;
 }
 .portfolio .get-started-wrap .get-started {
@@ -770,10 +904,12 @@ button:hover {
   max-width: 250px;
 }
 .portfolio .get-started-wrap .get-started ul .we-help h5 {
+  margin: 50px 0 30px;
   color: var(--color-orange);
 }
 .portfolio .get-started-wrap .get-started ul .we-help h4 {
   text-wrap: wrap;
+  margin-bottom: 50px;
 }
 .portfolio .get-started-wrap .get-started ul .get-started-star {
   position: absolute;
@@ -782,6 +918,7 @@ button:hover {
   z-index: 1;
 }
 .portfolio .get-started-wrap .get-started ul .get-started-ID {
+  margin-bottom: 60px;
   max-width: 100%;
 }
 .portfolio .get-started-wrap .get-started ul .get-started-girl-cloud {
@@ -797,7 +934,70 @@ button:hover {
   left: 10%;
   z-index: 6;
 }
+.portfolio .events {
+  max-width: 1170px;
+  margin: auto;
+}
+.portfolio .events .events-titel {
+  text-align: center;
+}
+.portfolio .events .events-titel h5 {
+  color: var(--color-orange);
+}
+.portfolio .events ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.portfolio .events ul li {
+  width: 365px;
+  height: 448px;
+  border: 1px solid #3a3c56;
+  margin: 20px 0;
+}
+.portfolio .events ul li .event-date {
+  margin: 0 50px;
+}
+.portfolio .events ul li .event-date h1 {
+  float: left;
+  margin: 48px 10px 0 0;
+}
+.portfolio .events ul li .event-date h4 {
+  padding: 60px 0 0 0;
+}
+.portfolio .events ul li .event-time {
+  margin: 50px 20px 50px 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #3a3c56;
+  text-align: left;
+}
+.portfolio .events ul li .event-time img {
+  float: left;
+  margin-right: 10px;
+}
+.portfolio .events ul li .events-down {
+  margin: 30px 20px;
+}
+.portfolio .events ul li .events-down p {
+  margin-top: 50px;
+}
 
+@media screen and (max-width: 1160px) {
+  .portfolio .latest-work ul li img {
+    width: 670px;
+    height: 416px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .portfolio .latest-work ul li img {
+    max-width: 670px;
+    height: 416px;
+  }
+}
 .footer {
   background-color: inherit;
 }

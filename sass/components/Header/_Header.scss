@@ -1,412 +1,400 @@
 .header {
-    background-color: rgb(31, 20, 35);
-    .header-inner {   
-        max-width: 1170px;
-        margin: 0 auto;
-        height: 80px;     
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 10px;
-        .active {
-            .logo {
-                color: var(--color-active);
-            }
-        }
-        .logo {
-            color: white;    
-            display: flex;
-            align-items: center; 
-            .logo-item-big {
-                position: relative;
-                float: left; 
-                .logo-item-small {
-                    position: absolute;
-                    top: 14px;
-                    right: 12px;
-                    z-index: 2;
-                }   
-            }
-            h4 {
-                margin-left: 10px;   
-            }
-            .header-logo:hover {
-                text-decoration: underline;
-            }       
-       }
-        .menu {
-            width: 400px;
-            padding: 0 20px;
-            .menu-list {
-                display: flex; 
-                justify-content: space-between; 
-                img{
-                    background-color: #EF6D58;
-                    width: 20px;
-                    border-radius: 50%;
-                    float: left;
-                    margin-top: -2px;
-                }
-                a {                   
-                color: white; 
-                margin-left: 3px;   
-                }
-                .active {
-                     a {
-                        color: var(--color-active);
-                     }
-                         
-                 }
-                li :hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-        
-      button {
-        border: var(--border-button);
-        margin-right: 20px; 
+  background-color: rgb(31, 20, 35);
+  .header-inner {
+    max-width: 1170px;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    .active {
+      .logo {
+        color: var(--color-active);
       }
-     
     }
-    .modern-studio {
-        max-width: 1170px;
-        // height: 615px;
-        margin: 80px auto 0;    
-        display: grid;
+    .logo {
+      color: white;
+      display: flex;
+      align-items: center;
+      .logo-item-big {
+        position: relative;
+        float: left;
+        .logo-item-small {
+          position: absolute;
+          top: 14px;
+          right: 12px;
+          z-index: 2;
+        }
+      }
+      h4 {
+        margin-left: 10px;
+      }
+      .header-logo:hover {
+        text-decoration: underline;
+      }
+    }
+    .menu {
+      width: 400px;
+      padding: 0 20px;
+      .menu-list {
+        display: flex;
         justify-content: space-between;
-        grid-template-areas: 
-        "modern-studio-left modern-studio-right";
-        // flex-wrap: wrap;
-        // justify-content: space-between;
-        
-            .modern-studio-left {
-                position: relative;
-                width: 500px;
-                height: 670px;
-                // border: solid white;
-            .modern-studio-left-position {
-                max-width: 500px;
-                height: 602px;
-                color: white;
-                position: absolute;
-                z-index: 1;     
-                   .ms-p-orange {
-                       color:#EF6D58;
-                   }
-                   .ms-p-grey {
-                       color: #7e7d7d;
-                   }
-                   .ms-left-buttons {
-                       width: 300px;
-                       margin-top: 35px;
-                       display: flex;
-                       justify-content: space-between;
-       
-                       button {
-                           border: var(--border-button);
-                          
-                       }
-                       
-                    
-                        
-
-                   }
-                   
-               }
-               .metainc {
-                margin-top: 50px;
-                img {
-                    float: left;
-
-                }
-                p {
-                    margin-left: 70px;
-                    margin-top: 10px;
-                }
-            }
-               .ms-left-star {
-                   position: absolute;
-                   top: 40px;
-                   left: 280px;    
-            }  
+        img {
+          background-color: #ef6d58;
+          width: 20px;
+          border-radius: 50%;
+          float: left;
+          margin-top: -2px;
         }
-             .modern-studio-right {
-                position: relative;
-                // border: solid white;
-                width: 580px;
-                height: 620px;
-
-                .modern-studio-right-oval {
-                    max-width: 600px;
-                    height: 500px;
-                    // margin: auto;
-                    text-align: center;
-                    justify-items: center;
-                    position: absolute;
-                    top: 50px;
-                    left: 30px;
-                    z-index: 1;
-                    overflow: hidden;
-                    // border: solid white;
-                    
-                .big-oval {
-                    animation-duration:1s;
-                    animation-name: slidebigoval;
-                    max-width: 100%;
-                    img {
-                        max-width: 90%;
-                    }
-                }
-                // @keyframes slidebigoval {
-                //     from {
-                //        margin-left:-200%;
-                //     }
-                //     to {
-                //         margin-left: 0%;
-                //     }
-                    
-                // }
-            }
-
-            .modern-studio-right-grid {
-                display: grid;
-                max-width: 570px;
-                position: absolute;
-                z-index: 2;
-                // grid-template-areas:
-                // "arch arch oval cloud"
-                // "arch arch oval cloud"
-                // "arch arch smiling-girl smiling-girl"
-                // "spiral . smiling-girl smiling-girl"
-                // "id-card id-card smiling-girl smiling-girl"
-                // "id-card id-card arrow .";
-                grid-template-columns: auto auto auto auto;
-                grid-template-rows: auto auto auto auto auto auto;
-
-
-                
-                
-                
-                .arch-laptop {
-                    grid-column: 1 / 3;
-                    grid-row: 1 / 4;
-                    // max-width: 100%;
-                    // max-height: 100%;
-                    position: relative;
-                    .arch {
-                        // grid-area: arch;
-                        // grid-column: 1 / 3;
-                        // grid-row: 1 / 4;
-                        animation-duration: 3s;
-                        animation-name: slidearch;
-                        position: absolute;
-                        max-width: 100%;
-                        max-height: 100%;
-                        // img {
-                        //     max-width: 100%;
-                        // }
-    
-                    }
-                    .laptop {
-
-                        // grid-area: arch;
-                        
-                        position: absolute;
-                        margin-top: 15px;
-                        margin-left: 10px;
-                        z-index: 3;
-                        max-width: 90%;
-                        max-height: 90%;
-                        // img {
-                        //     max-width: 100%;
-                        // }
-                    }
-
-                }
-                .oval {
-                    // grid-area: oval;
-                    grid-column: 3 / 4;
-                    grid-row: 1 / 3;
-                    max-width: 100%;
-                    max-height: 100%;
-                    // img {
-                    //     max-width: 100%;
-                    // }
-                    
-                }
-                .stars {
-                    // grid-area: oval;
-                    grid-column: 3 / 4;
-                    grid-row: 1 / 3;
-                    position: absolute;
-                    margin-left: 35px;
-                    margin-top: 30px;
-                    z-index: 3;
-                    max-width: 100%;
-                    max-height: 100%;
-                    // img {
-                    //     max-width: 100%;
-                    // }
-                }
-                
-                .cloud {
-                    // grid-column: 4;
-                    // grid-row: 1;
-                    // grid-area: cloud;
-                    grid-column: 4 / 5;
-                    grid-row: 1 / 3;
-                    max-width: 100%;
-                    max-height: 100%;
-                    // img {
-                    //     max-width: 100%;
-                    // }
-                }
-                .smiling-girl {
-                    grid-column: 3 / 5;
-                    grid-row: 3 / 6;
-                    // grid-area: smiling-girl;
-                    animation-duration: 4s;
-                    animation-name: slidesmile;
-                    max-width: 100%;
-                    max-height: 100%;
-                    // img {
-                    //     max-width: 100%;
-                    // }
-
-                }
-                .spiral {
-                    grid-column: 1 / 2;
-                    grid-row: 4 / 5;
-                    // grid-area: spiral;
-                    animation-duration: 2s;
-                    animation-name: slidespiral;
-                    max-width: 100%;
-                    max-height: 100%;
-                    // img {
-                    //     max-width: 100%;
-                    // }
-                }
-                .id-card {
-                    grid-column: 1 / 3;
-                    grid-row: 5 / 7;
-                    // grid-area: id-card;
-                    // margin-left: 10px;
-                    animation-duration: 2s;
-                    animation-name: slidecard;
-                    max-width: 100%;
-                    max-height: 100%;
-                    // img {
-                    //     max-width: 100%;
-                    // }
-                }
-                .arrow {
-                    grid-column: 3 / 4;
-                    grid-row: 6 / 7;
-                    // grid-area: arrow;
-                    animation-duration: 4s;
-                    animation-name: slidearrow;
-                    max-width: 100%;
-                    max-height: 100%;
-                    // img {
-                    //     max-width: 100%;
-                    // }
-                }
-                // @keyframes slidearch {
-                //     from {
-                //        margin-left: 200%;
-                //     }
-                //     to {
-                //         margin-left: 0%;
-                //     }
-                    
-                // }
-                // @keyframes slidecard {
-                //     from {
-                //        margin-left: 200%;
-                //     }
-                //     to {
-                //         margin-left: 0%;
-                //     }
-                    
-                // }
-                // @keyframes slidearrow {
-                //     from {
-                //        margin-left: 200%;
-                //     }
-                //     to {
-                //         margin-left: 0%;
-                //     }
-                    
-                // }
-                // @keyframes slidespiral {
-                //     from {
-                //        margin-left: 200%;
-                //     }
-                //     to {
-                //         margin-left: 0%;
-                //     }
-                    
-                // }
-                // @keyframes slidesmile {
-                //     from {
-                //        margin-left: 200%;
-                //     }
-                //     to {
-                //         margin-left: 0%;
-                //     }
-                    
-                // }
+        a {
+          color: white;
+          margin-left: 3px;
         }
+        .active {
+          a {
+            color: var(--color-active);
+          }
         }
+        li :hover {
+          text-decoration: underline;
+        }
+      }
     }
+
+    button {
+      border: var(--border-button);
+      margin-right: 20px;
+    }
+  }
+  .modern-studio {
+    // max-width: 1170px;
+    // height: 615px;
+    margin: 80px auto 0;
+    display: flex;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+    // grid-template-areas:
+    // "modern-studio-left modern-studio-right";
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+
+    .modern-studio-left {
+      position: relative;
+      width: 450px;
+      height: 670px;
+      // border: solid white;
+      .modern-studio-left-position {
+        max-width: 500px;
+        height: 602px;
+        color: white;
+        position: absolute;
+        z-index: 1;
+        .ms-p-orange {
+          color: #ef6d58;
+        }
+        .ms-p-grey {
+          color: #7e7d7d;
+        }
+        .ms-left-buttons {
+          width: 300px;
+          margin-top: 35px;
+          display: flex;
+          justify-content: space-between;
+
+          button {
+            border: var(--border-button);
+          }
+        }
+      }
+      .metainc {
+        margin-top: 50px;
+        img {
+          float: left;
+        }
+        p {
+          margin-left: 70px;
+          margin-top: 10px;
+        }
+      }
+      .ms-left-star {
+        position: absolute;
+        top: 40px;
+        left: 280px;
+      }
+    }
+    .modern-studio-right {
+      position: relative;
+      // border: solid white;
+      width: 580px;
+      height: 620px;
+
+      .modern-studio-right-oval {
+        max-width: 600px;
+        height: 500px;
+        // margin: auto;
+        text-align: center;
+        justify-content: space-between;
+
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        z-index: 1;
+        overflow: hidden;
+        // border: solid white;
+
+        .big-oval {
+          animation-duration: 1s;
+          animation-name: slidebigoval;
+          // max-width: 100%;
+          img {
+            max-width: 90%;
+          }
+        }
+        @keyframes slidebigoval {
+          from {
+            margin-left: -200%;
+          }
+          to {
+            margin-left: 0%;
+          }
+        }
+      }
+
+      .modern-studio-right-grid {
+        display: grid;
+        max-width: 570px;
+        position: absolute;
+        z-index: 2;
+        // grid-template-areas:
+        // "arch arch oval cloud"
+        // "arch arch oval cloud"
+        // "arch arch smiling-girl smiling-girl"
+        // "spiral . smiling-girl smiling-girl"
+        // "id-card id-card smiling-girl smiling-girl"
+        // "id-card id-card arrow .";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+        .arch-laptop {
+          grid-column: 1 / 3;
+          grid-row: 1 / 4;
+          width: auto;
+          height: auto;
+          position: relative;
+          .arch {
+            // grid-area: arch;
+            // grid-column: 1 / 3;
+            // grid-row: 1 / 4;
+            animation-duration: 3s;
+            animation-name: slidearch;
+            position: absolute;
+            max-width: 200px;
+            height: 100%;
+            // img {
+            //     max-width: 100%;
+            // }
+          }
+          .laptop {
+            // grid-area: arch;
+
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 20px;
+            z-index: 3;
+            max-width: 200px;
+            // img {
+            //     max-width: 100%;
+            // }
+          }
+        }
+        .oval {
+          // grid-area: oval;
+          grid-column: 3 / 4;
+          grid-row: 1 / 3;
+          max-width: auto;
+          height: auto;
+          // img {
+          //     max-width: 100%;
+          // }
+        }
+        .stars {
+          // grid-area: oval;
+          grid-column: 3 / 4;
+          grid-row: 1 / 3;
+          position: absolute;
+          margin-left: 35px;
+          margin-top: 30px;
+          z-index: 3;
+          width: auto;
+          height: auto;
+          // img {
+          //     max-width: 100%;
+          // }
+        }
+
+        .cloud {
+          // grid-column: 4;
+          // grid-row: 1;
+          // grid-area: cloud;
+          grid-column: 4 / 5;
+          grid-row: 1 / 3;
+          width: auto;
+          height: auto;
+          // img {
+          //     max-width: 100%;
+          // }
+        }
+        .smiling-girl {
+          grid-column: 3 / 5;
+          grid-row: 3 / 6;
+          // grid-area: smiling-girl;
+          animation-duration: 4s;
+          animation-name: slidesmile;
+          max-width: 200px;
+          // img {
+          //     max-width: 100%;
+          // }
+        }
+        .spiral {
+          grid-column: 1 / 2;
+          grid-row: 4 / 5;
+          // grid-area: spiral;
+          animation-duration: 2s;
+          animation-name: slidespiral;
+          width: auto;
+          height: auto;
+          // img {
+          //     max-width: 100%;
+          // }
+        }
+        .id-card {
+          grid-column: 1 / 3;
+          grid-row: 5 / 7;
+          // grid-area: id-card;
+          // margin-left: 10px;
+          animation-duration: 2s;
+          animation-name: slidecard;
+          width: auto;
+          height: auto;
+          // img {
+          //     max-width: 100%;
+          // }
+        }
+        .arrow {
+          grid-column: 3 / 4;
+          grid-row: 6 / 7;
+          // grid-area: arrow;
+          animation-duration: 4s;
+          animation-name: slidearrow;
+          width: auto;
+          height: auto;
+          // img {
+          //     max-width: 100%;
+          // }
+        }
+        @keyframes slidearch {
+          from {
+            margin-left: 200%;
+          }
+          to {
+            margin-left: 0%;
+          }
+        }
+        @keyframes slidecard {
+          from {
+            margin-left: 200%;
+          }
+          to {
+            margin-left: 0%;
+          }
+        }
+        @keyframes slidearrow {
+          from {
+            margin-left: 200%;
+          }
+          to {
+            margin-left: 0%;
+          }
+        }
+        @keyframes slidespiral {
+          from {
+            margin-left: 200%;
+          }
+          to {
+            margin-left: 0%;
+          }
+        }
+        @keyframes slidesmile {
+          from {
+            margin-left: 200%;
+          }
+          to {
+            margin-left: 0%;
+          }
+        }
+      }
+    }
+  }
 }
 
+.arch,
+.laptop,
+.oval,
+.stars,
+.cloud,
+.smiling-girl,
+.spiral,
+.arrow,
+.id-card {
+  display: grid;
+  grid-auto-flow: row;
+}
 
-@media screen and (max-width:800px) {
-    .header {
-        .header-inner {
-            .menu {
-                .menu-list {
-                    li {
-                        a:last-child {
-                            display: none;
+@media screen and (max-width: 1100px) {
+  .modern-studio-left {
+    order: 1;
+  }
+  .modern-studio-right {
+    order: 0;
+  }
+}
 
-                        }
-                        
-                    }
-                }
+@media screen and (max-width: 800px) {
+  .header {
+    .header-inner {
+      .menu {
+        .menu-list {
+          li {
+            a:last-child {
+              display: none;
             }
+          }
         }
-    }    
+      }
+    }
+  }
 }
 @media screen and (max-width: 500px) {
-    .header {
-
-        .modern-studio {
-            grid-template-areas: 
-            "modern-studio-right"
-            "modern-studio-left";
-            .modern-studio-right {
-                grid-area: modern-studio-right;
-
-            }
-            
-            .modern-studio-left {
-                grid-area: modern-studio-left;
-                .ms-left-star {
-                    top: 10px;
-                    left: 180px;
-                }
-            }
-            h1 {
-                font-size: 52px;
-                white-space: wrap;
-            }
+  .header {
+    .modern-studio {
+      .modern-studio-left {
+        .ms-left-star {
+          top: 10px;
+          left: 180px;
         }
+        .modern-studio-right-grid {
+          img {
+            width: 70%;
+          }
+        }
+      }
+      h1 {
+        font-size: 52px;
+        white-space: wrap;
+      }
     }
-   
-    
-    
+  }
 }
