@@ -169,14 +169,11 @@ button:hover {
 .header .modern-studio {
   max-width: 1170px;
   margin: 80px auto 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: grid;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  grid-template-areas: "modern-studio-left modern-studio-right";
 }
 .header .modern-studio .modern-studio-left {
   position: relative;
@@ -230,11 +227,13 @@ button:hover {
   height: 620px;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-oval {
-  max-width: 580px;
-  height: 620px;
-  margin: auto;
+  max-width: 600px;
+  height: 500px;
+  text-align: center;
+  justify-items: center;
   position: absolute;
   top: 50px;
+  left: 30px;
   z-index: 1;
   overflow: hidden;
 }
@@ -243,106 +242,126 @@ button:hover {
           animation-duration: 1s;
   -webkit-animation-name: slidebigoval;
           animation-name: slidebigoval;
+  max-width: 100%;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-oval .big-oval img {
-  max-width: 100%;
+  max-width: 90%;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid {
   display: grid;
   max-width: 570px;
   position: absolute;
   z-index: 2;
-  grid-template-areas: "arch arch oval cloud" "arch arch oval cloud" "arch arch smiling-girl smiling-girl" "spiral . smiling-girl smiling-girl" "id-card id-card smiling-girl smiling-girl" "id-card id-card arrow .";
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto auto auto;
 }
-.header .modern-studio .modern-studio-right .modern-studio-right-grid .arch {
-  grid-area: arch;
+.header .modern-studio .modern-studio-right .modern-studio-right-grid .arch-laptop {
+  grid-column: 1/3;
+  grid-row: 1/4;
+  position: relative;
+}
+.header .modern-studio .modern-studio-right .modern-studio-right-grid .arch-laptop .arch {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-name: slidearch;
           animation-name: slidearch;
-}
-.header .modern-studio .modern-studio-right .modern-studio-right-grid .arch img {
-  max-width: 100%;
-}
-.header .modern-studio .modern-studio-right .modern-studio-right-grid .laptop {
-  grid-area: arch;
   position: absolute;
-  margin-top: 20px;
-  margin-left: 20px;
-  z-index: 3;
-}
-.header .modern-studio .modern-studio-right .modern-studio-right-grid .laptop img {
   max-width: 100%;
+  max-height: 100%;
+}
+.header .modern-studio .modern-studio-right .modern-studio-right-grid .arch-laptop .laptop {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 10px;
+  z-index: 3;
+  max-width: 90%;
+  max-height: 90%;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid .oval {
-  grid-area: oval;
-}
-.header .modern-studio .modern-studio-right .modern-studio-right-grid .oval img {
+  grid-column: 3/4;
+  grid-row: 1/3;
   max-width: 100%;
+  max-height: 100%;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid .stars {
-  grid-area: oval;
+  grid-column: 3/4;
+  grid-row: 1/3;
   position: absolute;
   margin-left: 35px;
   margin-top: 30px;
   z-index: 3;
-}
-.header .modern-studio .modern-studio-right .modern-studio-right-grid .stars img {
   max-width: 100%;
+  max-height: 100%;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid .cloud {
-  grid-area: cloud;
-}
-.header .modern-studio .modern-studio-right .modern-studio-right-grid .cloud img {
+  grid-column: 4/5;
+  grid-row: 1/3;
   max-width: 100%;
+  max-height: 100%;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid .smiling-girl {
-  grid-area: smiling-girl;
+  grid-column: 3/5;
+  grid-row: 3/6;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   -webkit-animation-name: slidesmile;
           animation-name: slidesmile;
-}
-.header .modern-studio .modern-studio-right .modern-studio-right-grid .smiling-girl img {
   max-width: 100%;
+  max-height: 100%;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid .spiral {
-  grid-area: spiral;
+  grid-column: 1/2;
+  grid-row: 4/5;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-name: slidespiral;
           animation-name: slidespiral;
-}
-.header .modern-studio .modern-studio-right .modern-studio-right-grid .spiral img {
   max-width: 100%;
+  max-height: 100%;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid .id-card {
-  grid-area: id-card;
-  margin-left: 50px;
+  grid-column: 1/3;
+  grid-row: 5/7;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-name: slidecard;
           animation-name: slidecard;
-}
-.header .modern-studio .modern-studio-right .modern-studio-right-grid .id-card img {
   max-width: 100%;
+  max-height: 100%;
 }
 .header .modern-studio .modern-studio-right .modern-studio-right-grid .arrow {
-  grid-area: arrow;
+  grid-column: 3/4;
+  grid-row: 6/7;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   -webkit-animation-name: slidearrow;
           animation-name: slidearrow;
-}
-.header .modern-studio .modern-studio-right .modern-studio-right-grid .arrow img {
   max-width: 100%;
+  max-height: 100%;
 }
 
 @media screen and (max-width: 800px) {
   .header .header-inner .menu .menu-list li a:last-child {
     display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header .modern-studio {
+    grid-template-areas: "modern-studio-right" "modern-studio-left";
+  }
+  .header .modern-studio .modern-studio-right {
+    grid-area: modern-studio-right;
+  }
+  .header .modern-studio .modern-studio-left {
+    grid-area: modern-studio-left;
+  }
+  .header .modern-studio .modern-studio-left .ms-left-star {
+    top: 10px;
+    left: 180px;
+  }
+  .header .modern-studio h1 {
+    font-size: 52px;
+    white-space: wrap;
   }
 }
 .main {
@@ -673,6 +692,45 @@ button:hover {
   margin-top: -60px;
   margin-left: 24px;
   z-index: 2;
+}
+.main .portfolio {
+  margin: 100px 0;
+}
+.main .portfolio .latest-work ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 10px;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
+}
+.main .portfolio .latest-work ul li {
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+  border-radius: 20px;
+}
+.main .portfolio .latest-work ul li .picture {
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .portfolio .latest-work ul li .text {
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  z-index: 2;
+  color: white;
+}
+.main .portfolio .latest-work ul li .picture:hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
 }
 
 .footer {
