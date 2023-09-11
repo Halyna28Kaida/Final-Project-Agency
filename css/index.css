@@ -985,6 +985,87 @@ button:hover {
 .portfolio .events ul li .events-down p {
   margin-top: 50px;
 }
+.portfolio .OurTeam {
+  max-width: 1170px;
+  margin: 100px auto;
+}
+.portfolio .OurTeam .OurTeam-up h5 {
+  color: var(--color-orange);
+}
+.portfolio .OurTeam .OurTeam-up h2 {
+  margin: 50px 0;
+}
+.portfolio .OurTeam .OurTeam-up ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  row-gap: 50px;
+}
+.portfolio .OurTeam .OurTeam-up ul li div {
+  width: 270px;
+  height: 272px;
+  border: 1px solid #3a3c56;
+  text-align: center;
+}
+.portfolio .OurTeam .OurTeam-up ul li div img {
+  padding-top: 24px;
+}
+.portfolio .OurTeam .OurTeam-up ul li h4 {
+  margin: 20px 0 10px;
+}
+.portfolio .OurTeam .OurTeam-up ul li p {
+  color: #b8b2b2;
+}
+.portfolio .OurTeam .OurTeam-down {
+  margin: 100px 0;
+}
+.portfolio .OurTeam .OurTeam-down ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  row-gap: 50px;
+}
+.portfolio .OurTeam .OurTeam-down ul li {
+  max-width: 570px;
+}
+.portfolio .OurTeam .OurTeam-down ul li .OurTeam-down-bg {
+  position: relative;
+}
+.portfolio .OurTeam .OurTeam-down ul li .OurTeam-down-bg img {
+  max-width: 95%;
+}
+.portfolio .OurTeam .OurTeam-down ul li .OurTeam-down-bg .OurTeam-down-foto {
+  position: absolute;
+  bottom: 5px;
+  left: 50px;
+  z-index: 2;
+}
+.portfolio .OurTeam .OurTeam-down ul li .OurTeam-down-bg .OurTeam-down-foto img {
+  max-width: 95%;
+}
+.portfolio .OurTeam .OurTeam-down ul .OurTeam-down-right {
+  max-width: 470px;
+}
+.portfolio .OurTeam .OurTeam-down ul .OurTeam-down-right h5 {
+  color: var(--color-orange);
+}
+.portfolio .OurTeam .OurTeam-down ul .OurTeam-down-right h3 {
+  margin: 30px 0;
+}
+.portfolio .OurTeam .OurTeam-down ul .OurTeam-down-right p {
+  margin-top: 10px;
+}
+.portfolio .OurTeam .OurTeam-down ul .OurTeam-down-right p span {
+  color: #b8b2b2;
+}
 
 @media screen and (max-width: 1160px) {
   .portfolio .latest-work ul li img {
