@@ -30,8 +30,9 @@ a {
   color: black;
 }
 
-html, body {
-  background-color: #f2dfd1;
+html,
+body {
+  background-color: #f3e7e7;
   max-width: 1600px;
   font-size: 16px;
 }
@@ -81,7 +82,7 @@ button {
 }
 
 button:hover {
-  background-color: #EF6D58;
+  background-color: #ef6d58;
   color: black;
   cursor: pointer;
 }
@@ -1044,7 +1045,7 @@ button:hover {
 }
 .portfolio .OurTeam .OurTeam-down ul li .OurTeam-down-bg .OurTeam-down-foto {
   position: absolute;
-  bottom: 5px;
+  bottom: 0;
   left: 50px;
   z-index: 2;
 }
@@ -1065,6 +1066,121 @@ button:hover {
 }
 .portfolio .OurTeam .OurTeam-down ul .OurTeam-down-right p span {
   color: #b8b2b2;
+}
+
+.main-down {
+  max-width: 1170px;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main-down .Testimonials {
+  text-align: center;
+}
+.main-down .Testimonials h5 {
+  color: var(--color-orange);
+}
+.main-down .Testimonials h2 {
+  margin: 50px;
+}
+.main-down .Testimonials ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main-down .Testimonials ul li {
+  max-width: 476px;
+  border: 1px solid #f3d1bf;
+  height: auto;
+  padding: 50px;
+  text-align: left;
+}
+.main-down .Testimonials ul li .star {
+  margin-bottom: 50px;
+}
+.main-down .Testimonials ul li .testimonials-clients {
+  margin-top: 50px;
+}
+.main-down .Testimonials ul li .testimonials-clients img {
+  float: left;
+  margin-top: -20px;
+}
+.main-down .Testimonials ul li .testimonials-clients .Clients {
+  margin: 0px 0 0 100px;
+}
+.main-down .main-down-pricing {
+  margin: 100px 0;
+}
+.main-down .main-down-pricing h5 {
+  color: var(--color-orange);
+  margin-top: 20px;
+}
+.main-down .main-down-pricing h2 {
+  margin: 20px 0 40px;
+}
+.main-down .main-down-pricing ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main-down .main-down-pricing ul li {
+  max-width: 280px;
+  height: 412px;
+  padding: 50px;
+  border: 1px solid #f3d1bf;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.main-down .main-down-pricing ul li h3 {
+  margin: 30px 0;
+}
+.main-down .main-down-pricing ul li .main-down-pricing-list {
+  margin: 50px 0;
+}
+.main-down .main-down-pricing ul li .main-down-pricing-list div {
+  margin: 20px 0;
+}
+.main-down .main-down-pricing ul li .main-down-pricing-list div img {
+  float: left;
+  margin-right: 10px;
+}
+.main-down .main-down-pricing ul li:hover {
+  background-color: white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.main-down .main-down-pricing ul .main-down-pricing-popular {
+  padding: 20px 50px 80px 50px;
+}
+.main-down .main-down-pricing ul .main-down-pricing-popular .popular {
+  display: inline;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: var(--color-orange);
+}
+.main-down .main-down-pricing ul .main-down-pricing-popular h5 {
+  margin-top: 32px;
+}
+.main-down .main-down-pricing ul button {
+  color: black;
 }
 
 @media screen and (max-width: 1160px) {
