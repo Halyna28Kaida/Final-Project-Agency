@@ -663,6 +663,86 @@
       }
     }
   }
+  .FAQ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .FAQ-left {
+      max-width: 470px;
+      margin-bottom: 50px;
+      h5 {
+        color: var(--color-orange);
+      }
+      h4 {
+        margin: 30px 0;
+      }
+      button {
+        margin-top: 50px;
+        color: black;
+      }
+    }
+    .FAQ-right {
+      max-width: 570px;
+      min-width: 370px;
+      .FAQ-down-arrows {
+        .FAQ-down-title {
+          .down {
+            position: relative;
+            float: right;
+          }
+          .up {
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            display: none;
+          }
+        }
+      }
+      .hidden {
+        display: none;
+      }
+    }
+    .FAQ-right {
+      .FAQ-down-arrows {
+        .FAQ-down-title {
+          .down:hover {
+            .up {
+              display: block;
+            }
+            .hidden {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .our-awards {
+    display: flex;
+    flex-direction: column;
+    .our-awards-table {
+      justify-content: center;
+      .our-awards-table-all {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          width: 375px;
+        }
+      }
+      .our-awards-table-all li:last-child {
+        text-align: right;
+      }
+      .our-awards-table-all li:nth-child(2) {
+        text-align: center;
+      }
+      .our-awards-table-one li:first-child {
+        img {
+          width: 120px;
+          height: 80px;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 1160px) {
   .portfolio {
