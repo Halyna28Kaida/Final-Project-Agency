@@ -664,9 +664,10 @@
     }
   }
   .FAQ {
+    margin: 100px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     .FAQ-left {
       max-width: 470px;
       margin-bottom: 50px;
@@ -682,10 +683,13 @@
       }
     }
     .FAQ-right {
-      max-width: 570px;
-      min-width: 370px;
+      width: 500px;
+      // min-width: 370px;
       .FAQ-down-arrows {
         .FAQ-down-title {
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
           .down {
             position: relative;
             float: right;
@@ -699,20 +703,19 @@
         }
       }
       .hidden {
+        padding: 10px;
         display: none;
       }
     }
     .FAQ-right {
-      .FAQ-down-arrows {
-        .FAQ-down-title {
-          .down:hover {
-            .up {
-              display: block;
-            }
-            .hidden {
-              display: block;
-            }
-          }
+      .FAQ-down-arrows:hover {
+        background-color: white;
+        .up {
+          display: block;
+        }
+
+        .hidden {
+          display: block;
         }
       }
     }
@@ -721,24 +724,15 @@
     display: flex;
     flex-direction: column;
     .our-awards-table {
-      justify-content: center;
-      .our-awards-table-all {
-        display: flex;
-        flex-wrap: wrap;
-        li {
-          width: 375px;
+      .table-row {
+        ul {
+          display: flex;
         }
-      }
-      .our-awards-table-all li:last-child {
-        text-align: right;
-      }
-      .our-awards-table-all li:nth-child(2) {
-        text-align: center;
-      }
-      .our-awards-table-one li:first-child {
-        img {
-          width: 120px;
-          height: 80px;
+        ul li:first-child {
+          img {
+            width: 120px;
+            height: 80px;
+          }
         }
       }
     }
@@ -752,6 +746,21 @@
           img {
             width: 670px;
             height: 416px;
+          }
+        }
+      }
+    }
+  }
+  .our-awards {
+    .our-awards-table {
+      .table-row {
+        .our-awards-table-all {
+          flex-direction: column;
+          li {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+            align-items: center;
           }
         }
       }
