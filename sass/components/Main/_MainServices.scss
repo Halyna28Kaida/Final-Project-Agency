@@ -1,0 +1,19 @@
+.services-services {
+  margin: 80px 0;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    li {
+      margin: 50px;
+      max-width: 570px;
+      h5 {
+        color: var(--color-orange);
+        margin-bottom: 30px;
+      }
+      p {
+        line-height: 30px;
+      }
+    }
+  }
+}

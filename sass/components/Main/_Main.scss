@@ -67,7 +67,8 @@
     }
   }
   .how-we-work {
-    margin-top: 140px;
+    margin-top: 100px;
+    padding: 50px;
     padding-bottom: 120px;
     border-bottom: 1px solid gray;
 
@@ -380,6 +381,9 @@
           h4 {
             text-wrap: wrap;
             margin-bottom: 50px;
+          }
+          button {
+            color: black;
           }
         }
 
@@ -725,8 +729,15 @@
     flex-direction: column;
     .our-awards-table {
       .table-row {
+        border-bottom: 1px solid #f3d1bf;
         ul {
           display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          li {
+            padding: 10px;
+            text-align: center;
+          }
         }
         ul li:first-child {
           img {
@@ -734,11 +745,174 @@
             height: 80px;
           }
         }
+        ul li:nth-child(3) {
+          flex-grow: 2;
+        }
+        ul li:nth-child(2) {
+          width: 110px;
+        }
+        ul li:nth-child(4) {
+          width: 180px;
+        }
+      }
+    }
+  }
+  .our-blog {
+    margin: 50px 0;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #f3d1bf;
+    h5 {
+      color: var(--color-orange);
+    }
+    h2 {
+      margin: 20px 0 50px;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      li {
+        padding-top: 20px;
+        .text-big {
+          margin-top: 20px;
+        }
+        h4 {
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+  .main-down-contacts {
+    .newsletter {
+      .newsletter-form {
+        ul {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          li {
+            margin: 10px;
+            .subscribe {
+              padding: 0;
+              color: black;
+              height: 30px;
+            }
+          }
+        }
+        ul li:first-child {
+          flex-grow: 2;
+        }
+        ul li:nth-child(2) {
+          input {
+            padding: 5px;
+            width: 250px;
+          }
+        }
+      }
+    }
+    .google-map {
+      position: relative;
+      margin: 50px 0;
+      iframe {
+        width: 100%;
+        height: 700px;
+      }
+      .get-in-touch {
+        position: absolute;
+        bottom: 100px;
+        left: 20px;
+        // z-index: 2;
+        width: 345px;
+        background-color: white;
+        padding: 50px 5px 50px 20px;
+        ul {
+          display: flex;
+          flex-direction: column;
+          margin-top: 50px;
+
+          li {
+            margin: 10px 0;
+            select {
+              width: 320px;
+              height: 30px;
+            }
+          }
+          input {
+            width: 315px;
+            height: 30px;
+          }
+          button {
+            color: black;
+          }
+        }
+        ul li:last-child {
+          text-align: right;
+          margin-right: 20px;
+        }
+      }
+    }
+    .phones {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+          width: 388px;
+          height: 192px;
+          text-align: center;
+          padding-top: 50px;
+          border: 1px solid #f3d1bf;
+          img {
+            width: 20px;
+            float: left;
+            background-color: #ef6d58;
+            padding: 20px;
+            margin-left: 90px;
+            border-radius: 50%;
+          }
+          h5 {
+            width: 230px;
+            padding: 20px 0 0 50px;
+          }
+          p {
+            padding-top: 50px;
+          }
+        }
+      }
+    }
+    .dream-project {
+      margin: 100px auto 0;
+      background-color: var(--color-orange);
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 60px;
+        .dream-project-left {
+          max-width: 475px;
+          p {
+            margin: 50px 0;
+          }
+          button {
+            background-color: white;
+            color: black;
+          }
+        }
+        .dream-project-right {
+          max-width: 444px;
+          img {
+            width: 100%;
+          }
+        }
       }
     }
   }
 }
 @media screen and (max-width: 1160px) {
+  h2,
+  h1,
+  h5 {
+    text-align: center;
+  }
   .portfolio {
     .latest-work {
       ul {
@@ -751,16 +925,38 @@
       }
     }
   }
+
+  // .our-blog {
+  //   ul {
+  //     flex-direction: column;
+  //   }
+  // }
+}
+@media screen and (max-width: 800px) {
   .our-awards {
     .our-awards-table {
       .table-row {
-        .our-awards-table-all {
+        ul {
           flex-direction: column;
-          li {
-            display: flex;
-            flex-direction: column;
-            margin: 20px 0;
-            align-items: center;
+        }
+      }
+    }
+  }
+
+  .main-down-contacts {
+    .newsletter {
+      .newsletter-form {
+        ul {
+          flex-direction: column;
+        }
+        ul li:nth-child(2) {
+          input {
+            width: 329px;
+          }
+        }
+        ul {
+          .subscribe {
+            width: 260px;
           }
         }
       }
@@ -777,6 +973,27 @@
             height: 416px;
           }
         }
+      }
+    }
+  }
+  .google-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .get-in-touch {
+      position: static !important;
+      margin-bottom: 50px;
+      li {
+        margin: 15px 0 !important;
+        select {
+          width: 310px !important;
+        }
+      }
+      input {
+        width: 307px !important;
+      }
+      button {
+        margin-right: 32px !important;
       }
     }
   }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.min.css" />
-    <title>About</title>
+    <title>Contact</title>
   </head>
   <body>
     <div id="root">
@@ -23,7 +23,7 @@
           </a>
           <section class="menu">
             <ul class="menu-list">
-              <li class="active">
+              <li>
                 <a href="./about.html">
                   <img src="./assets/icons/about-svgrepo-com.svg" alt="" />
                 </a>
@@ -49,10 +49,10 @@
               </li>
             </ul>
           </section>
-          <a href="./contact.html"><button>CONTACT</button></a>
+          <a class="active" href="./contact.html"><button>CONTACT</button></a>
         </nav>
-        <section class="about-about-us">
-          <h1>About Us</h1>
+        <section class="contact-contact">
+          <h1>Contact</h1>
           <p>
             Agency provides a full service range including technical skills,
             design, business understanding.
@@ -60,54 +60,69 @@
         </section>
       </header>
 
-      <main class="main-about">
-        <section class="main-about-about-us">
-          <ul>
-            <li>
-              <h5>ABOUT</h5>
-              <h2>
-                An Experience <br />
-                Design Agency
-              </h2>
-            </li>
-            <li>
-              <p>
-                Ability to put themselves in the merchant's shoes. It is meant
-                to partner on the long run, and work as an extension of the
-                merchant's team.
-              </p>
-              <br />
-              <p>
-                A digital agency is a business you hire to outsource your
-                digital marketing efforts, instead of handling in-house. They
-                can provide your business with a variety of digital solutions to
-                promote your product or service online and help you.
-              </p>
-            </li>
-          </ul>
+      <main class="main-contact-contact">
+        <section id="contactUs" class="google-map">
+          <form class="get-in-touch" action="search" method="Post">
+            <h4>Get In Touch</h4>
+            <ul>
+              <li>
+                <input
+                  placeholder="Your e-mail"
+                  type="email"
+                  name="email"
+                  id="GITemail"
+                />
+              </li>
+              <li>
+                <select name="subject" id="subject" width="300">
+                  <option>Design</option>
+                  <option>Servise</option>
+                  <option>Work</option>
+                </select>
+              </li>
+              <li>
+                <textarea
+                  placeholder="Your message"
+                  name="textarea"
+                  id="textarea"
+                  cols="38"
+                  rows="5"
+                ></textarea>
+              </li>
+              <li><button>SUBMIT NOW</button></li>
+            </ul>
+          </form>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.14361837905!2d14.42712564615881!3d50.08359789531201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b949376391a6b%3A0x373e75b4308b033!2sOpletalova%2C%20110%2000%20Nov%C3%A9%20M%C4%9Bsto!5e0!3m2!1sru!2scz!4v1694771193382!5m2!1sru!2scz"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </section>
-        <section class="main-about-us-down">
+        <section class="phones">
           <ul>
             <li>
-              <iframe
-                width="570"
-                height="420"
-                src="https://www.youtube.com/embed/dD2EISBDjWM?si=IUtetIJGlLG8LUHA"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
+              <img src="./assets/icons/main-down/Contacts-phone.svg" alt="" />
+              <h5>PHONE</h5>
+              <p class="text-big">+1 (234) 567-89-00</p>
             </li>
             <li>
-              <div>
-                <img src="./assets/images/MainAboutFoto1.png" alt="" />
-                <img src="./assets/images/MainAboutFoto2.png" alt="" />
-              </div>
-              <div>
-                <img src="./assets/images/MainAboutFoto3.png" alt="" />
-                <img src="./assets/images/MainAboutFoto4.png" alt="" />
-              </div>
+              <img
+                src="./assets/icons/main-down/Contacts-mail.svg"
+                width="24"
+                height="24"
+                alt=""
+              />
+              <h5>EMAIL</h5>
+              <p class="text-big">info@agency.com</p>
+            </li>
+            <li>
+              <img src="./assets/icons/main-down/Contacts-adress.svg" alt="" />
+              <h5>ADRESS</h5>
+              <p class="text-big">2247 Lunetta Street, TX 76301</p>
             </li>
           </ul>
         </section>

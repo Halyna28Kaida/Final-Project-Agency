@@ -1,0 +1,60 @@
+.pricing-main-pricing {
+  max-width: 1170px;
+  margin: 0 auto;
+  .main-down-pricing {
+    margin: 100px 0;
+    h5 {
+      color: var(--color-orange);
+      margin-top: 20px;
+    }
+    h2 {
+      margin: 20px 0 40px;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      li {
+        max-width: 280px;
+        height: 412px;
+        padding: 50px;
+        border: 1px solid #f3d1bf;
+        transition: 0.5s;
+        text-align: center;
+        h3 {
+          margin: 30px 0;
+        }
+        .main-down-pricing-list {
+          margin: 50px 0;
+          div {
+            margin: 20px 0;
+            img {
+              float: left;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      li:hover {
+        background-color: white;
+        transform: scale(1.1);
+      }
+      .main-down-pricing-popular {
+        padding: 20px 50px 80px 50px;
+        .popular {
+          display: inline;
+          padding: 5px 10px;
+          border-radius: 20px;
+          background-color: var(--color-orange);
+        }
+        h5 {
+          margin-top: 32px;
+        }
+      }
+
+      button {
+        color: black;
+      }
+    }
+  }
+}

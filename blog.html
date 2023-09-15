@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.min.css" />
-    <title>About</title>
+    <title>Blog</title>
   </head>
   <body>
     <div id="root">
@@ -49,10 +49,40 @@
               </li>
             </ul>
           </section>
-          <button>CONTACT</button>
+          <a href="./contact.html"><button>CONTACT</button></a>
         </nav>
+        <section class="blog-article">
+          <h1>Blog Articles</h1>
+          <p>
+            Agency provides a full service range including technical skills,
+            design, business understanding.
+          </p>
+        </section>
       </header>
-      <main></main>
+
+      <main class="main-blog-article">
+        <ul>
+          <li>
+            <img src="./assets/images/BlogArticlePerformance.png" alt="" />
+            <p class="text-big">Stories</p>
+            <h3>
+              Performance marketing <br />
+              agencies specialize
+            </h3>
+            <p>7 Dec, 2021</p>
+          </li>
+          <li>
+            <img src="./assets/images/BlogArticleDigital.png" alt="" />
+            <p class="text-big">Design</p>
+            <h3>
+              Digital marketing <br />
+              channels
+            </h3>
+            <p>23 Nov, 2021</p>
+          </li>
+        </ul>
+      </main>
+
       <footer class="footer">
         <section class="main-footer">
           <div class="footer-agency">
@@ -63,13 +93,13 @@
           <div class="list-footer-menu">
             <ul>
               <li class="title">MENU</li>
-              <a href="./about.html">
+              <a class="active" href="./about.html">
                 <li>About</li>
               </a>
               <a href="./service.html">
                 <li>Services</li>
               </a>
-              <a class="active" href="./blog.html">
+              <a href="./blog.html">
                 <li>Blog</li>
               </a>
               <a href="#">
